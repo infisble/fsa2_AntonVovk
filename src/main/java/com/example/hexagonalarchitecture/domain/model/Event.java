@@ -5,5 +5,5 @@ public class Event {
     private String name;
     private String date;
 
-    // Getters and setters
+
 }
