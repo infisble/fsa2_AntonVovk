@@ -1,6 +1,5 @@
 # Event Managers for POSAM
 
-A Spring Boot application following **Hexagonal Architecture** to manage events and places, using **JWT-secured REST APIs**, **PostgreSQL**, and **OpenAPI** documentation.
 
 ---
 
@@ -17,7 +16,46 @@ docker-compose up -d
 ```
 
 ### 3.Postman 
+**Token** 
+```bash
+POST /auth/login
+Content-Type: application/json
 
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+```
+Answer look like
+```bash
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI..."
+}
+
+
+```
+
+**Request**
+```bash
+POST /auth/register
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+```
+Answer look like
+```bash
+{
+  "message": "User registered"
+}
+
+
+
+```
 
 ---
 
