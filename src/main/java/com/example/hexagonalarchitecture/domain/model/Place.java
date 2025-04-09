@@ -5,5 +5,5 @@ public class Place {
     private String name;
     private String location;
 
-    // Getters and setters
+   
 }
